@@ -2,16 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\ViDuController;
 
 Route::get("/dien","App\Http\Controllers\ViDuController@hihi");
 
@@ -23,3 +14,5 @@ Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
 
 Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
+Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
+

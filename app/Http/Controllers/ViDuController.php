@@ -30,6 +30,7 @@ class ViDuController extends Controller
     function test1() {
       return "Nguyễn Ngọc Bảo Trúc";
     }
+//7.3
     function topmovies()
     {
         $movies = DB::table("movie")
@@ -40,6 +41,14 @@ class ViDuController extends Controller
 
         return view("topmovies", compact("movies"));
     }
+//7.4
+    public function getLongMovies()
+    {
+        $movies = DB::table('movie')
+                    ->where('runtime', '>', 120)
+                    ->limit(10)
+                    ->get();
 
-}
-
+        return view('movies.long_movies', compact('movies'));
+    }
+   }
