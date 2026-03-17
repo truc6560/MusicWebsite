@@ -23,3 +23,5 @@ Route::get("/qlsach/themtheloai","App\Http\Controllers\BookController@them_dl");
 Route::get("/qlsach/suatheloai","App\Http\Controllers\BookController@sua_dl");
 Route::get("/qlsach/sachkinhdien","App\Http\Controllers\BookController@laysachkinhdien");
 Route::get("/qlsach/xoatheloai","App\Http\Controllers\BookController@xoa_dl");
+
+Route::get("dsgenre","App\Http\Controllers\BookController@ds");
