@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ViDuController extends Controller
 {
@@ -28,6 +29,16 @@ class ViDuController extends Controller
     }
     function test1() {
       return "Nguyễn Ngọc Bảo Trúc";
+    }
+    function topmovies()
+    {
+        $movies = DB::table("movie")
+                    ->select("movie_name", "release_date", "vote_average")
+                    ->orderBy("vote_average", "desc")
+                    ->take(10)
+                    ->get();
+
+        return view("topmovies", compact("movies"));
     }
 
 }
