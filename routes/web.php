@@ -23,6 +23,16 @@ Route::get("/qlsach/themtheloai","App\Http\Controllers\BookController@them_dl");
 Route::get("/qlsach/suatheloai","App\Http\Controllers\BookController@sua_dl");
 Route::get("/qlsach/sachkinhdien","App\Http\Controllers\BookController@laysachkinhdien");
 Route::get("/qlsach/xoatheloai","App\Http\Controllers\BookController@xoa_dl");
-Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btn");
+
 
 Route::get("/dien","App\Http\Controllers\BookController@hihi");
+
+
+
+Route::get("/phanthingoc","App\Http\Controllers\ViDuController@test2");
+
+Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
+
+Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
+
+>>>>>>> e6388b742e28fc988e38e3f84aaffe2876c48e09

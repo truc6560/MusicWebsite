@@ -11,8 +11,19 @@ class ViDuController extends Controller
     return view('test', ["name1"=>$name]);
  }
 
-    function btn(){
+    function test2(){
+        return "Phan Thị Ngọc";
+     }
+
+
+  function btn(){
+    return "Nguyen Bui Minh Tu";
+ }
+
+
+    function btnn(){
         return "Nguyễn Thị Bích Trâm";
     }
+
 }
 
