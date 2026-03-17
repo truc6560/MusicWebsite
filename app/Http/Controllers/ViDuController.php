@@ -42,13 +42,13 @@ class ViDuController extends Controller
         return view("topmovies", compact("movies"));
     }
 //7.4
-    public function getLongMovies()
+    public function longmovies()
     {
         $movies = DB::table('movie')
                     ->where('runtime', '>', 120)
                     ->limit(10)
                     ->get();
 
-        return view('movies.long_movies', compact('movies'));
+        return view('longmovies', compact('movies'));
     }
    }

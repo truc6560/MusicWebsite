@@ -13,6 +13,7 @@ Route::get("/phanthingoc","App\Http\Controllers\ViDuController@test2");
 Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
 
 Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
+
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
-Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
+Route::get("/phim","App\Http\Controllers\ViDuController@topmovies");
 
