@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
   <head>
-    <title>{{$title}}</title>
+    <title>{{'title'}}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
@@ -19,7 +19,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="">Tiểu thuyết</a>
               </li>
-              . . . .
+              <li class="nav-item">
+                <a class="nav-link" href="">Truyện ngắn tản văn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Tác phẩm kinh điển</a>
+              </li>
             </ul>
           </nav>
           <img src="{{asset('images/sidebar_1.jpg')}}" width="100%" class='mt-1'>
