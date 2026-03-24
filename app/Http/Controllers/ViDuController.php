@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+use Illuminate\Support\Facades\DB;
+
 class ViDuController extends Controller
 {
     function test(){
     $name = "HUB";
     return view('test', ["name1"=>$name]);
  }
+
 
     function test2(){
       return "Phan Thị Ngọc";
@@ -63,3 +66,10 @@ class ViDuController extends Controller
         return view('longmovies', compact('movies'));
     }
    }
+
+    function phimCanada(){
+        $phim = DB::table('movie')->where('country_name', 'Canada')->get();
+        return view('canada', compact('phim'));
+    }
+}
+
