@@ -2,26 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\ViDuController;
 
-Route::get('/ktra','App\Http\Controllers\ktraController@form');
-Route::post('/tinhtuoi','App\Http\Controllers\ktraController@tinhtuoi');
+Route::get("/dien","App\Http\Controllers\ViDuController@hihi");
+
+Route::get("/truc","App\Http\Controllers\ViDuController@test1");
+
+Route::get("/phanthingoc","App\Http\Controllers\ViDuController@test2");
+
+Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
+
+Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
+Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
+Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
 
 
-Route::get("/qlsach/theloai","App\Http\Controllers\BookController@laythongtintheloai");
-Route::get("/qlsach/thongtinsach","App\Http\Controllers\BookController@laythongtinsach");
-Route::get("/qlsach/themtheloai","App\Http\Controllers\BookController@them_dl");
-Route::get("/qlsach/suatheloai","App\Http\Controllers\BookController@sua_dl");
-Route::get("/qlsach/sachkinhdien","App\Http\Controllers\BookController@laysachkinhdien");
-Route::get("/qlsach/xoatheloai","App\Http\Controllers\BookController@xoa_dl");
-
-Route::get("dsgenre","App\Http\Controllers\BookController@ds");
