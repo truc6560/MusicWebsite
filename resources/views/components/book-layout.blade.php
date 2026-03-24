@@ -13,14 +13,17 @@
         <div class='col-3 pr-0'>
           <nav class="navbar navbar-light">
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Tiểu thuyết</a>
-              </li>
-              . . . .
-            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/sach') }}">Tất cả sách</a>
+            </li>
+            @foreach($theloai as $loai)
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/sach/theloai/'.$loai->id) }}">
+                        {{ $loai->ten_the_loai }}
+                    </a>
+                </li>
+            @endforeach
+        </ul>
           </nav>
           <img src="{{asset('images/sidebar_1.jpg')}}" width="100%" class='mt-1'>
           <img src="{{asset('images/sidebar_2.jpg')}}" width="100%" class='mt-1'>

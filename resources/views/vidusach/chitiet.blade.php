@@ -1,4 +1,4 @@
-<x-book-layout>
+<x-book-layout :theloai="$theloai">
     <x-slot name="title">
         Chi tiết: {{$data->tieu_de}}
     </x-slot>

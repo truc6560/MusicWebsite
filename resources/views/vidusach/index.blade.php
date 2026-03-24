@@ -23,7 +23,7 @@
     </style>
 </head>
 
-<x-book-layout>
+<x-book-layout :theloai="$theloai">
   <x-slot name='title'>
     Sách
 </x-slot>
