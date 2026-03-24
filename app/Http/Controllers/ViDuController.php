@@ -13,18 +13,24 @@ class ViDuController extends Controller
  }
 
     function test2(){
-        return "Phan Thị Ngọc";
+      return "Phan Thị Ngọc";
      }
 
-
-  function btn(){
-    return "Nguyen Bui Minh Tu";
- }
-
+    function btn(){
+     return "Nguyen Bui Minh Tu";
+    }
 
     function btnn(){
-        return "Nguyễn Thị Bích Trâm";
+      return "Nguyễn Thị Bích Trâm";
     }
+
+    function hihi() {
+      return "Nguyễn Lê Kiều Duyên";
+    }
+    function test1() {
+      return "Nguyễn Ngọc Bảo Trúc";
+    }
+//7.3
     function topmovies()
     {
         $movies = DB::table("movie")
@@ -35,6 +41,14 @@ class ViDuController extends Controller
 
         return view("topmovies", compact("movies"));
     }
+//7.4
+    public function getLongMovies()
+    {
+        $movies = DB::table('movie')
+                    ->where('runtime', '>', 120)
+                    ->limit(10)
+                    ->get();
 
-}
-
+        return view('movies.long_movies', compact('movies'));
+    }
+   }
