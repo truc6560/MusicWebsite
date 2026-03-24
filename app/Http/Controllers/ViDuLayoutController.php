@@ -37,4 +37,9 @@ function chitiet($id)
 
     return view("vidusach.chitiet", compact("data", "theloai"));
 }
+function theloai($id)
+    {
+        $data = DB::select("select * from sach where the_loai = ?", [$id]);
+        return view("vidusach.index", compact("data"));
+    }
 }
