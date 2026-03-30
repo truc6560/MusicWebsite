@@ -14,13 +14,17 @@
         .navbar-nav {
             margin:0 auto;
         }
-        .list-book{
-            display:grid;
-            grid-template-columns:repeat(4,24%);
+        .list-book {
+            display: grid;
+            grid-template-columns: repeat(4, 24%);
         }
+
         .book {
-            margin:10px;
-            text-align:center;
+            /*margin:10px;*/
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
     </style>
     </head>
