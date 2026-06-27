@@ -1,64 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🎧 MusicWeb — Trải nghiệm âm nhạc không giới hạn
+
+> **Sứ mệnh:** Mang đến một không gian nghe nhạc mượt mà, đầy cảm xúc và hoàn toàn tùy biến cho mỗi cá nhân. Với giao diện trực quan và khả năng quản lý thư viện âm nhạc thông minh, MusicWeb giúp bạn dễ dàng kết nối với những giai điệu yêu thích nhất.
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <!-- Thay thế đường dẫn bằng ảnh thực tế của bạn -->
+  <img src="public/image/hero.jpg" width="800" alt="MusicWeb Hero Banner">
 </p>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Tính năng nổi bật
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🎶 Trải nghiệm cốt lõi
+- 🔊 **Phát nhạc mượt mà:** Luồng phát ổn định, tương thích với nhiều định dạng audio chất lượng cao.
+- 📝 **Lời bài hát Karaoke-style (AJAX):** Hiển thị lời bài hát (file `.lrc`) đồng bộ theo thời gian thực mà không cần tải lại trang.
+- 📱 **Thiết kế Responsive:** Giao diện thích ứng hoàn hảo trên mọi kích thước màn hình (Desktop, Tablet, Mobile).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👤 Cá nhân hóa & Tương tác
+- 🎧 **Quản lý Playlist:** Tự do tạo, chỉnh sửa và chia sẻ các danh sách phát theo tâm trạng cá nhân.
+- ❤️ **Thư viện yêu thích:** Thêm bài hát hoặc ca sĩ vào mục yêu thích để truy cập nhanh bằng một cú nhấp chuột.
+- ⏱️ **Lịch sử nghe nhạc:** Tự động lưu lại các track đã nghe, giúp bạn dễ dàng tìm lại những giai điệu vừa lướt qua.
+- 🖼️ **Tùy chỉnh giao diện:** Hỗ trợ người dùng tải lên Avatar cá nhân và ảnh bìa (cover) riêng cho từng playlist.
 
-## Learning Laravel
+### 🌍 Khám phá & Cập nhật
+- 📈 **Bảng xếp hạng (Charts):** Cập nhật liên tục top các bài hát và xu hướng thịnh hành nhất thông qua `ChartRankingService`.
+- 🎤 **Hệ sinh thái Nghệ sĩ/Album:** Trang thông tin chi tiết cho từng nghệ sĩ và album, đính kèm danh sách bài hát liên quan.
+- 🔔 **Tin tức & Thông báo:** Hệ thống cập nhật tin tức âm nhạc và thông báo hoạt động real-time.
+- 🔑 **Đăng nhập nhanh:** Tích hợp xác thực qua tài khoản mạng xã hội (Google Login).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📸 Giao diện sản phẩm
 
-## Laravel Sponsors
+<p align="center">
+  <img src="public/image/screenshot-home.png" width="800" alt="Trang chủ MusicWeb">
+</p>
+<br>
+<p align="center">
+  <img src="public/image/screenshot-player.png" width="400" alt="Trình phát nhạc">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/image/screenshot-playlist.png" width="400" alt="Quản lý Playlist">
+</p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+## 💡 Tại sao bạn nên chọn MusicWeb?
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+*   **Tối ưu hóa trải nghiệm:** Mọi thao tác từ tìm kiếm, tạo playlist đến chuyển bài đều được thiết kế tối giản và nhanh chóng.
+*   **Tương tác sống động:** Lời bài hát đồng bộ giúp bạn dễ dàng hòa mình và hát theo ca khúc yêu thích.
+*   **Không bao giờ lỡ nhịp:** Luôn nắm bắt xu hướng nhạc mới nhất qua Bảng xếp hạng và hệ thống Tin tức tích hợp.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🛠️ Công nghệ sử dụng (Tech Stack)
 
-## Code of Conduct
+*   **Backend:** PHP, Laravel Framework
+*   **Frontend:** HTML/CSS, JavaScript (AJAX)
+*   **Database:** MySQL
+*   **Quản lý phiên bản:** Git & GitHub
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🚀 Hướng dẫn sử dụng nhanh
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1.  **Bắt đầu:** `Đăng ký / Đăng nhập` vào hệ thống (có thể dùng Google Login).
+2.  **Khám phá:** Nhập tên bài hát hoặc nghệ sĩ vào thanh `Tìm kiếm` (Search).
+3.  **Tận hưởng:** Nhấn `Play` để nghe và theo dõi lời bài hát hiển thị.
+4.  **Lưu trữ:** Nhấn icon `❤️` hoặc chọn `Thêm vào Playlist` để lưu trữ ca khúc.
+5.  **Quản lý:** Truy cập mục `Lịch sử` hoặc `Trang cá nhân` để xem lại hoạt động nghe nhạc của bạn.
