@@ -4,7 +4,7 @@
 
 <p align="center">
   <!-- Replace with your actual image path -->
-  <img src="public/image/hero.jpg" width="800" alt="MusicWeb Hero Banner">
+  <img src="public/image/hero.png" width="800" alt="MusicWeb Hero Banner">
 </p>
 
 ---
